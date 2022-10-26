@@ -229,6 +229,8 @@ html {
     }
     .header .header-image {
         background-image: url(./images/header-photo-mobile.jpg);
+        background-size: contain;
+        height: 47.8rem;
     }
     .header .header-text {
         flex-direction: column;
