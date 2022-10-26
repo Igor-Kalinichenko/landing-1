@@ -1,0 +1,291 @@
+@import url(./fonts.css);
+
+@keyframes showMenu {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+@keyframes hideMenu {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -100%;
+    }
+}
+
+html, body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------------- HEADER STYLES ----------------- */
+
+.header nav ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+    font-size: 1.8rem;
+    padding: 2rem 0;
+    position: relative;
+}
+.header nav ul li {
+    list-style: none;
+}
+.header nav ul li a {
+    color: #828282;
+}
+.header-closeIcon {
+    display: none;
+}
+.header .header-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.header .header-text .header-name {
+    font-size: 4.8rem;
+}
+.header .header-text .header-bio {
+    align-self: flex-end;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.header .header-text .header-lang {
+    align-self: flex-end;
+    font-size: 1.6rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-weight: 400;
+    color: #828282;
+}
+.header .header-lang-menu {
+    display: none;
+}
+.header .header-currentLang {
+    color: #000;
+}
+.header .header-image {
+    width: 100%;
+    height: 38.8rem;
+    background: url(./images/header-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 2rem 0;
+    margin-bottom: 10rem;
+}
+.header .header-menu_icon {
+    display: none;
+    cursor: pointer;
+}
+.header .header-name_block {
+    display: flex;
+    justify-content: space-between;
+} 
+
+/* --------------- ABOUT ME/SKILLS SECTION STYLES ----------------- */
+
+.about-me, .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 12rem 0;
+    text-align: center;
+}
+.about-me h1, .skills h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+/* ---------------- SKILLS ------------------ */
+
+.skills p {
+    margin-top: 4rem;
+    margin-bottom: 8.3rem;
+}
+.skills .skills-programs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills-tool {
+    padding-top: 1rem;
+}
+.skills-tool .skills-icon object {
+    background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+.skills-tool:last-child .skills-icon object {
+    background: none;
+}
+.skills .skills-text {
+    font-size: 1.4rem;
+    color: #828282;
+    padding-top: 2.4rem;
+    padding-bottom: 4.2rem;
+}
+.skills .skills-rate object {
+    padding-right: 1rem;
+}
+.skills .skills-rate object:last-child {
+    padding-right: 0;
+}
+
+/* -------------- PORTFOLIO ------------------ */
+
+.portfolio {
+    text-align: center;
+    padding: 10rem 0;
+}
+.portfolio h1 {
+    font-size: 3.4rem;
+    margin-bottom: 4.7rem;
+}
+.portfolio .portfolio-img p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 4.5rem;
+}
+.portfolio .portfolio-img {
+    margin-bottom: 9.9rem;
+}
+.portfolio .portfolio-img:last-child {
+    margin-bottom: 0;
+}
+.portfolio .portfolio-img img {
+    width: 100%;
+}
+
+/* ---------------- FOOTER ---------------------- */
+
+.contacts {
+    text-align: center;
+    padding: 10rem 0;
+}
+.contacts h1 {
+    font-size: 3.4rem;
+}
+.contacts p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.contacts button {
+    background-color: #070707;
+    color: #fff;
+    padding: 1.3rem 3rem;
+    border-radius: 5rem;
+    font-size: 1.8rem;
+    margin-bottom: 8rem;
+    cursor: pointer;
+}
+.contacts .contacts-social_icons object {
+    margin-right: 6rem;
+}
+.contacts .contacts-social_icons object:last-child {
+    margin-right: 0;
+}
+.contacts .text-muted {
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#arrowTop {
+    position: fixed;
+    bottom: 6%;
+    left: 2%;
+    cursor: pointer;
+}
+.hidden {
+    opacity: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    .header .header-image {
+        background-image: url(./images/header-photo-mobile.jpg);
+    }
+    .header .header-text {
+        flex-direction: column;
+    }
+    .header .header-menu_icon {
+        display: block;
+    }
+    .header .header-lang {
+        display: none;
+    }
+    .header .header-bio {
+        align-self: flex-start!important;
+    }
+    .header nav ul {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        background-color: #fff;
+        font-size: 3.4rem;
+        padding: 2rem;
+    }
+    .header nav ul li {
+        margin-bottom: 4rem;
+        border-bottom: 1px solid #000;
+    }
+    .header nav .showMenu {
+        right: 0;
+        animation: showMenu 1s;
+    }
+    .header nav .hideMenu {
+        right: -100%;
+        animation: hideMenu 1s;
+    }
+    .header-closeIcon {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+    .header .header-lang-menu {
+        display: block;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        font-weight: 400;
+        color: #828282;
+    }
+    .skills .skills-programs {
+        flex-direction: column;
+    }
+    .contacts .contacts-social_icons object {
+        margin-right: 2rem;
+    }
+    .contacts button {
+        width: 100%;
+    }
+}

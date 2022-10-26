@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header container" id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <div class="header-closeIcon"><img src="./css/images/close.svg" alt="close icon"></div>
+                <div class="header-lang-menu">RU | <span class="header-currentLang">ENG</span></div>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <div class="header-name_block">
+                <div class="header-name">Denis <br/>Novik</div>
+                <div class="header-menu_icon" id="menu"><img src="./css/images/menu-icon.svg" alt="menu icon"></div>
+            </div>
+            <div class="header-bio">UX | UI designer<br/>24 years old, Minsk</div>
+            <div class="header-lang">RU | <span class="header-currentLang">ENG</span></div>
+        </div>
+        <div class="header-image"></div>
+    </header>
+
+    <main>
+        <section class="bg-grey hidden" id="about-me">
+            <div class="about-me container">
+                <h1>About me</h1>
+                <p>Hi, I'm Denis – UX/UI designer from Minsk.<br />
+                    I'm interested in design and everything connected with it.<br /><br />
+                    
+                    I'm studying at courses "Web and mobile design <br />
+                    interfaces" in IT-Academy.<br /><br />
+                    
+                    Ready to implement excellent projects<br />
+                     with wonderful people.</p>
+            </div>
+        </section>
+        <section class="skills container hidden" id="skills"> 
+            <h1>Skills</h1>
+            <p>I work in such programs as</p>
+            <div class="skills-programs">
+                <div class="skills-tool">
+                    <div class="skills-icon">
+                        <object data="./css/images/ps.svg" type="image/svg+xml"></object>
+                    </div>
+                    <div class="skills-text">Adobe Photoshop</div>
+                    <div class="skills-rate">
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starDefault.svg" type="image/svg+xml"></object>
+                    </div>
+                </div>
+                <div class="skills-tool">
+                    <div class="skills-icon">
+                        <object data="./css/images/ai.svg" type="image/svg+xml"></object>
+                    </div>
+                    <div class="skills-text">Adobe Illustrator</div>
+                    <div class="skills-rate">
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starDefault.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starDefault.svg" type="image/svg+xml"></object>
+                    </div>
+                </div>
+                <div class="skills-tool">
+                    <div class="skills-icon">
+                        <object data="./css/images/ae.svg" type="image/svg+xml"></object>
+                    </div>
+                    <div class="skills-text">Adobe After Effects</div>
+                    <div class="skills-rate">
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starDefault.svg" type="image/svg+xml"></object>
+                    </div>
+                </div>
+                <div class="skills-tool">
+                    <div class="skills-icon">
+                        <object data="./css/images/Figma.svg" type="image/svg+xml"></object>
+                    </div>
+                    <div class="skills-text">Figma</div>
+                    <div class="skills-rate">
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starBlack.svg" type="image/svg+xml"></object>
+                        <object data="./css/images/starDefault.svg" type="image/svg+xml"></object>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-grey hidden" id="portfolio">
+            <div class="portfolio container">
+                <h1>Portfolio</h1>
+                <div class="portfolio-img">
+                    <img src="./css/images/portfolio1.jpg" alt="Online fashion store - Homepage">
+                    <p>Online fashion store - Homepage</p>
+                </div>
+                <div class="portfolio-img">
+                    <img src="./css/images/portfolio2.jpg" alt="Online fashion store - Homepage">
+                    <p>Reebok Store - Concept</p>
+                </div>
+                <div class="portfolio-img">
+                    <img src="./css/images/portfolio3.jpg" alt="Online fashion store - Homepage">
+                    <p>Braun Landing Page - Concept</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="contacts container hidden" id="contacts">
+        <h1>Contacts</h1>
+        <p>Want to know more or just chat?<br/>
+            You are welcome!</p>
+        <button>Send Message</button>
+        <div class="contacts-social_icons">
+            <object data="./css/images/linked.svg" type="image/svg+xml"></object>
+            <object data="./css/images/inst.svg" type="image/svg+xml"></object>
+            <object data="./css/images/be.svg" type="image/svg+xml"></object>
+            <object data="./css/images/web.svg" type="image/svg+xml"></object>
+        </div>
+        <p class="text-muted">Like me on<br/>
+            LinkedIn, Instagram, Behance, Dribble</p>
+    </footer>
+    <div id="arrowTop" hidden><img src="./css/images/arrow-top.svg" alt=""></div>
+
+    <script>
+        $(document).on("scroll", function() {
+            $('.hidden').each(function() {
+                if ($(this).position().top <= $(document).scrollTop() + $(window).height()) {
+                    $(this).animate({
+                        opacity: 1
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>
